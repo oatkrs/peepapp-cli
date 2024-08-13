@@ -1,0 +1,43 @@
+=== Information
+- APK path: randomgame.apk
+- APK sum: d05f855f7d13bf51d73a7eb6fe5fe42b432e81ad60f732222d1e0e6f0b745e7f
+- App version: 2.35.2
+- App version code: 1344
+- App UID: 15CB4411EB319E2EDD610D48871908C82309053D
+- App name: Hempire
+- App package: ca.lbcstudios.hempire
+- App permissions: 13
+    - com.singular.preinstall.READ_PERMISSION_SINGULAR
+    - android.permission.POST_NOTIFICATIONS
+    - android.permission.WAKE_LOCK
+    - com.google.android.c2dm.permission.RECEIVE
+    - android.permission.FOREGROUND_SERVICE
+    - com.android.vending.CHECK_LICENSE
+    - ca.lbcstudios.hempire.permission.C2D_MESSAGE
+    - com.android.vending.BILLING
+    - android.permission.ACCESS_NETWORK_STATE
+    - android.permission.INTERNET
+    - com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+    - com.google.android.gms.permission.AD_ID
+    - ca.lbcstudios.hempire.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+- App libraries:
+- Certificates: 1
+    - Issuer: Organization: LBC Studios Inc 
+Subject: Organization: LBC Studios Inc 
+Fingerprint: 37910ee62e6373599c3dbc3c1a63818c3e6e07a9 
+Serial: 1583023575
+=== Found trackers: 14
+ - Google CrashLytics
+ - Google Firebase Analytics
+ - HelpShift
+ - Facebook Ads
+ - Facebook Analytics
+ - Facebook Login
+ - Facebook Share
+ - Unity3d Ads
+ - ironSource
+ - Tapjoy
+ - GameAnalytics
+ - Singular
+ - Google AdMob
+ - IAB Open Measurement

@@ -1,0 +1,87 @@
+{
+  "application": {
+    "handle": "ca.lbcstudios.hempire",
+    "version_name": "2.35.2",
+    "version_code": "1344",
+    "uaid": "15CB4411EB319E2EDD610D48871908C82309053D",
+    "name": "Hempire",
+    "permissions": [
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.INTERNET",
+      "ca.lbcstudios.hempire.permission.C2D_MESSAGE",
+      "com.singular.preinstall.READ_PERMISSION_SINGULAR",
+      "android.permission.POST_NOTIFICATIONS",
+      "com.google.android.c2dm.permission.RECEIVE",
+      "android.permission.WAKE_LOCK",
+      "com.android.vending.CHECK_LICENSE",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "ca.lbcstudios.hempire.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "com.google.android.gms.permission.AD_ID",
+      "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+      "com.android.vending.BILLING"
+    ],
+    "libraries": []
+  },
+  "apk": {
+    "path": "ca.lbcstudios.hempire_2.35.2-1344_minAPI22(arm64-v8a,armeabi-v7a,x86,x86_64)(nodpi)_apkmirror.com.apk",
+    "checksum": "d05f855f7d13bf51d73a7eb6fe5fe42b432e81ad60f732222d1e0e6f0b745e7f"
+  },
+  "trackers": [
+    {
+      "name": "Google CrashLytics",
+      "id": 27
+    },
+    {
+      "name": "Google Firebase Analytics",
+      "id": 49
+    },
+    {
+      "name": "HelpShift",
+      "id": 58
+    },
+    {
+      "name": "Facebook Ads",
+      "id": 65
+    },
+    {
+      "name": "Facebook Analytics",
+      "id": 66
+    },
+    {
+      "name": "Facebook Login",
+      "id": 67
+    },
+    {
+      "name": "Facebook Share",
+      "id": 70
+    },
+    {
+      "name": "Unity3d Ads",
+      "id": 121
+    },
+    {
+      "name": "ironSource",
+      "id": 146
+    },
+    {
+      "name": "Tapjoy",
+      "id": 199
+    },
+    {
+      "name": "GameAnalytics",
+      "id": 205
+    },
+    {
+      "name": "Singular",
+      "id": 251
+    },
+    {
+      "name": "Google AdMob",
+      "id": 312
+    },
+    {
+      "name": "IAB Open Measurement",
+      "id": 328
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+direction: down
+
+PEEPAPP-CLI: {
+    label: "Peepapp-CLI"
+    shape: rectangle
+    style: {
+        fill: "#ffef96"
+        stroke: "#ffcc5c"
+        stroke-width: 3
+    }
+
+    CLI_INPUT: {
+        label: "Command-Line Input"
+        shape: rectangle
+        style: {
+            fill: "#ffddc1"
+            stroke: "#ff6f61"
+            stroke-width: 2
+        }
+    }
+
+    APK: {
+        label: "APK file"
+        shape: rectangle
+        style: {
+            fill: "#b3cde0"
+            stroke: "#03396c"
+            stroke-width: 2
+        }
+    }
+
+    UNZIP: {
+        label: "Unarchive APK"
+        shape: rectangle
+        style: {
+            fill: "#b3cde0"
+            stroke: "#03396c"
+            stroke-width: 2
+        }
+    }
+
+    DEX: {
+        label: "Extract DEX files"
+        shape: rectangle
+        style: {
+            fill: "#b3cde0"
+            stroke: "#03396c"
+            stroke-width: 2
+        }
+    }
+
+    STATIC_ANALYSIS_CLASS: {
+        label: "StaticAnalysis Class"
+        shape: rectangle
+        style: {
+            fill: "#d9e4f5"
+            stroke: "#08306b"
+            stroke-width: 2
+        }
+    }
+
+    DEXDUMP_INTEGRATION: {
+        label: "Dexdump Integration"
+        shape: rectangle
+        style: {
+            fill: "#d9e4f5"
+            stroke: "#08306b"
+            stroke-width: 2
+        }
+    }
+
+    DEXDUMP: {
+        label: "Run Dexdump"
+        shape: rectangle
+        style: {
+            fill: "#ffef96"
+            stroke: "#ffcc5c"
+            stroke-width: 2
+        }
+    }
+
+    TRACKER_SIG: {
+        label: "Check Tracker Signatures"
+        shape: rectangle
+        style: {
+            fill: "#ffef96"
+            stroke: "#ffcc5c"
+            stroke-width: 2
+        }
+    }
+
+    TRACKER_DB: {
+        label: "Tracker Database"
+        shape: rectangle
+        style: {
+            fill: "#d9e4f5"
+            stroke: "#08306b"
+            stroke-width: 2
+        }
+    }
+
+    JAVA_CLASSES: {
+        label: "Extract Java Classes"
+        shape: rectangle
+        style: {
+            fill: "#c5e384"
+            stroke: "#379634"
+            stroke-width: 2
+        }
+    }
+
+    MATCH: {
+        label: "Match Trackers"
+        shape: rectangle
+        style: {
+            fill: "#c5e384"
+            stroke: "#379634"
+            stroke-width: 2
+        }
+    }
+
+    EMBEDDED: {
+        label: "Embedded Trackers"
+        shape: rectangle
+        style: {
+            fill: "#c5e384"
+            stroke: "#379634"
+            stroke-width: 2
+        }
+    }
+
+
+    APK_SIG_CLASS: {
+        label: "ApkSignature Class"
+        shape: rectangle
+        style: {
+            fill: "#d9e4f5"
+            stroke: "#08306b"
+            stroke-width: 2
+        }
+    }
+
+    CERTIFICATE_CLASS: {
+        label: "Certificate Class"
+        shape: rectangle
+        style: {
+            fill: "#d9e4f5"
+            stroke: "#08306b"
+            stroke-width: 2
+        }
+    }
+
+    RSAKEYINFO_CLASS: {
+        label: "RSAKeyInfo Class"
+        shape: rectangle
+        style: {
+            fill: "#d9e4f5"
+            stroke: "#08306b"
+            stroke-width: 2
+        }
+    }
+
+    DSAKEYINFO_CLASS: {
+        label: "DSAKeyInfo Class"
+        shape: rectangle
+        style: {
+            fill: "#d9e4f5"
+            stroke: "#08306b"
+            stroke-width: 2
+        }
+    }
+
+    METADATA_COLLECTION: {
+        label: "Metadata Collection"
+        shape: rectangle
+        style: {
+            fill: "#b3cde0"
+            stroke: "#03396c"
+            stroke-width: 2
+        }
+    }
+
+    REPORT_GEN: {
+        label: "Generate Report"
+        shape: rectangle
+        style: {
+            fill: "#b3cde0"
+            stroke: "#03396c"
+            stroke-width: 2
+        }
+    }
+
+    OUTPUT_FORMAT: {
+        label: "Output Format (JSON/HTML)"
+        shape: rectangle
+        style: {
+            fill: "#ffddc1"
+            stroke: "#ff6f61"
+            stroke-width: 2
+        }
+    }
+
+    CLI_INPUT -> APK
+    APK -> UNZIP
+    UNZIP -> DEX
+    DEX -> DEXDUMP_INTEGRATION -> DEXDUMP
+    DEX -> TRACKER_SIG
+    TRACKER_DB -> TRACKER_SIG
+    DEXDUMP -> JAVA_CLASSES
+    JAVA_CLASSES -> MATCH
+    TRACKER_SIG -> MATCH
+    MATCH -> EMBEDDED
+    EMBEDDED -> REPORT_GEN
+    REPORT_GEN -> OUTPUT_FORMAT
+
+    APK_SIG_CLASS -> METADATA_COLLECTION
+    CERTIFICATE_CLASS -> METADATA_COLLECTION
+    RSAKEYINFO_CLASS -> METADATA_COLLECTION
+    DSAKEYINFO_CLASS -> METADATA_COLLECTION
+    METADATA_COLLECTION -> REPORT_GEN
+}
